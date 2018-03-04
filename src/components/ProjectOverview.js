@@ -1,24 +1,74 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import image from '../images/personas-frame-1.png'
+import { css } from 'emotion'
+import personas from '../images/projects/personas/placeholder.png'
+import blog from '../images/projects/segment-blog.png'
+import synapse from '../images/projects/synapse.png'
+import bottlesTonight from '../images/projects/bottles-tonight/bottles-tonight.png'
+import fxApp from '../images/projects/1fxapp/1fxapp.png'
+import absorbedApp from '../images/projects/absorbed/absorbed.png'
 
-export default class ProjectOverview extends React.Component {
+const BigProject = props => {
+  return (
+    <div
+      className={css`
+        margin-bottom: 48px;
+      `}
+      {...props}
+    />
+  )
+}
+
+const Split = props => {
+  return (
+    <div
+      className={css`
+        margin-bottom: 48px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 48px;
+      `}
+      {...props}
+    />
+  )
+}
+
+export default class ProjectOverview extends React.PureComponent {
   static propTypes = {}
 
   render() {
     const { children, ...props } = this.props
     return (
       <section className="clearfix">
-        <div className="Container ">
-          <div className="Project typekit-font-sans">
-            <figure className="Project-figure">
-              <img src={image} />
-            </figure>
-            <div className="Project-content">
-              <h2>Personas</h2>
-              <p>Personas</p>
+        <div
+          className={css`
+            margin-top: 40px;
+            margin-left: 80px;
+            margin-right: 80px;
+          `}
+        >
+          <BigProject>
+            <img src={personas} />
+          </BigProject>
+          <Split>
+            <div>
+              <img src={blog} />
             </div>
-          </div>
+            <div>
+              <img src={synapse} />
+            </div>
+          </Split>
+          <BigProject>
+            <img src={bottlesTonight} />
+          </BigProject>
+          <Split>
+            <div>
+              <img src={fxApp} />
+            </div>
+            <div>
+              <img src={absorbedApp} />
+            </div>
+          </Split>
         </div>
       </section>
     )
