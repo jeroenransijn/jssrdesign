@@ -1,0 +1,114 @@
+.Hero {
+  margin-top: 16vh;
+  margin-bottom: 12vh;
+}
+
+.Hero-header {
+  @media (--range-lap), (--range-desk) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.Hero-avatar {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  @media (--range-palm) {
+    width: 44px;
+    height: 44px;
+  }
+
+  @media (--range-hand) {
+    width: 80px;
+    height: 80px;
+  }
+
+  @media (--range-lap-s), (--range-lap-m) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.Hero-blurb {
+  font-weight: 400;
+  line-height: 1.25;
+
+  @media (--range-palm), (--range-hand) {
+    font-size: 1.5rem;
+    margin-top: 1em;
+  }
+
+  @media (--range-palm), (--range-lap) {
+    & br {
+      display: none;
+    }
+  }
+
+  @media (--range-lap-s) {
+    padding-left: 24px;
+    font-size: 1.7rem;
+  }
+
+  @media (--range-lap-m) {
+    padding-left: 32px;
+    font-size: 2rem;
+  }
+
+  @media (--range-lap-l) {
+    padding-left: 40px;
+    font-size: 2.6rem;
+  }
+
+  @media (--range-desk) {
+    padding-left: 40px;
+    font-size: 3rem;
+  }
+}
+
+.Hero-content {
+  font-size: 18px;
+  line-height: 2;
+
+  @media (--range-palm), (--range-hand) {
+    font-size: 15px;
+    margin-top: 1em;
+  }
+
+  @media (--range-lap-m) {
+    padding-left: 112px;
+  }
+
+  @media (--range-lap-s), (--range-lap-m) {
+    font-size: 16px;
+  }
+
+  @media (--range-lap-l) {
+    font-size: 16px;
+    padding-left: 160px;
+  }
+
+  @media (--range-desk) {
+    font-size: 18px;
+    padding-left: 160px;
+  }
+}
+
+.Hero-links {
+  @media (--range-palm), (--range-hand) {
+    & a {
+      float: left;
+      clear: both;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (--range-lap), (--range-desk) {
+    & a + a {
+      margin-left: 48px;
+    }
+  }
+}

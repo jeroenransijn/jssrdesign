@@ -28,11 +28,19 @@ body {
 }
 
 .Container {
-  max-width: 840px;
-  padding-left: 24px;
-  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (--range-palm), (--range-hand) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (--range-lap), (--range-desk) {
+    max-width: 952px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .WideContainer {
@@ -42,32 +50,6 @@ body {
   margin-top: 40px;
   padding-left: 80px;
   padding-right: 80px;
-}
-
-.Hero {
-  margin-top: 16vh;
-  margin-bottom: 12vh;
-}
-
-.Hero-header {
-  display: flex;
-  align-items: center;
-}
-
-.Hero-avatar {
-  flex-grow: 0;
-  flex-shrink: 0;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
-
-.Hero-blurb {
-  padding-left: 40px;
-}
-
-.Hero-content {
-  padding-left: 160px;
 }
 
 .typekit-font-serif {
@@ -103,6 +85,10 @@ a {
   &:active {
     background-color: var(--black);
     color: white;
+  }
+
+  @media (--range-palm), (--range-hand) {
+    padding: 4px 18px;
   }
 }
 
