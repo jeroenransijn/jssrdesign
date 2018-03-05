@@ -1,4 +1,4 @@
-if (document) {
+if (typeof document !== 'undefined') {
   ;(function(d) {
     var config = {
         kitId: 'tlw7lpg',
