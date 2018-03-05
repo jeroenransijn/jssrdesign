@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { withPrefix } from 'gatsby-link'
 import '../typekit'
+import appleTouchIcon from '../images/apple-touch-icon.png'
+import favicon32 from '../images/favicon-32x32.png'
+import favicon16 from '../images/favicon-16x16.png'
+import manifest from '../images/manifest.json'
 
 import '../css/index.css'
 
@@ -23,29 +27,15 @@ const TemplateWrapper = ({ children }) => (
         }
       ]}
     >
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href={withPrefix('/apple-touch-icon.png')}
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        href={withPrefix('/favicon-32x32.png')}
-        sizes="32x32"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        href={withPrefix('/favicon-16x16.png')}
-        sizes="16x16"
-      />
+      <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
+      <link rel="icon" type="image/png" href={favicon32} sizes="32x32" />
+      <link rel="icon" type="image/png" href={favicon16} sizes="16x16" />
       <link
         rel="mask-icon"
         href={withPrefix('/safari-pinned-tab.svg')}
         color="#5bbad5"
       />
-      <link rel="manifest" href={withPrefix('/manifest.json')} />
+      <link rel="manifest" href={manifest} />
       <meta name="theme-color" content="#ffffff" />
       <meta
         name="viewport"
