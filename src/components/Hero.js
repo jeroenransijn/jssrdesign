@@ -48,7 +48,7 @@ export default class Hero extends React.PureComponent {
             </a>
             <a
               href="#"
-              className={`social-link ${css`
+              className={`black-link text-all-caps ${css`
                 margin-right: 48px;
               `}`}
             >
@@ -57,7 +57,7 @@ export default class Hero extends React.PureComponent {
               </i>
               <span>Twitter</span>
             </a>
-            <a href="#" className="social-link">
+            <a href="#" className="black-link text-all-caps">
               <i style={{ top: -2, position: 'relative' }}>
                 <LinkedIn width={21} height={21} />
               </i>

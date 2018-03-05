@@ -32,6 +32,15 @@ body {
   margin-right: auto;
 }
 
+.WideContainer {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .Hero {
   margin-top: 16vh;
   margin-bottom: 12vh;
@@ -94,6 +103,16 @@ a {
   }
 }
 
+.BackButton {
+  margin: 24px;
+  display: inline-block;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
 .Link {
   color: rgba(34, 41, 47, 1);
 }
@@ -108,12 +127,17 @@ a {
   }
 }
 
-.social-link {
-  color: rgba(34, 41, 47, 1);
+.text-all-caps {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 13px;
   font-weight: 500;
+}
+
+.black-link {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(34, 41, 47, 1);
 
   &:hover {
     & i {
@@ -127,8 +151,12 @@ a {
     position: relative;
   }
 
-  & span {
+  & i + span {
     margin-left: 8px;
+  }
+
+  & span + svg {
+    margin-left: 4px;
   }
 }
 

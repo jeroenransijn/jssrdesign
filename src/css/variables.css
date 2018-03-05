@@ -3,4 +3,11 @@
   --typekit-font-sans: 'adelle-sans', sans-serif;
   --black: rgba(34, 41, 47, 1);
   --body-text: rgb(61, 72, 82);
+  --grey-lightest: #f8fafc;
+  --grey-lighter: #f1f5f8;
+  --grey-light: #dae1e7;
+  --grey-base: #b8c2cc;
+  --grey-dark: #8795a1;
+  --grey-darker: #606f7b;
+  --grey-darkest: #3d4852;
 }
