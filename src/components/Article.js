@@ -51,7 +51,6 @@ export default class Article extends React.PureComponent {
   gotoNextLightboxImage = () => {
     this.setState(state => {
       const currentImage = state.currentImage + 1
-      console.log('currentImage', currentImage)
       if (currentImage < 0) {
         return {
           isOpen: false

@@ -1,8 +1,5 @@
 # Personas Case Study
 
-Involvement: Product Design Lead
-Date: 2017–ongoing
-
 Segment’s core data router product tracks over 2.9 billion end users every single month. That data powers analytics, marketing automation and machine learning tools for our customers. Segment Personas is the next generation of tools and products build on top of this massive data pipeline. The goal of Personas is to make every interaction with your users cohesive, personal and relevant.
 
 When I joined the Personas team (formerly called User Record team) early 2017. We were a small, nimble team within the organization — often referred to as a startup within Segment. I worked closely with the PM behind Personas as well as the engineers on the team. It was the perfect fit for me, we moved fast and I got to wear multiple hats. I spend a lot of my time designing in code and building out complex data-driven UI systems.
@@ -31,7 +28,7 @@ The profile view and extension in Zendesk and Salesforce was a useful tool for o
 
 A lot of the information was in the event history of a user and there was no way to understand that data from a higher level. Our customer were giving the same signal, they liked the user profiles, but they wanted to synthesize new information based on the event history.
 
-## Synthesizing information on the user profile
+## Synthesizing Information on the User Profile
 
 At this point profiles were useful and we got signal for synthesizing new information on top of the user. We did a lot of crazy 8 sessions and other design thinking sprints at the time. As we are thinking about this problem, we came up with a couple of different ways of solving this problem.
 
@@ -47,11 +44,11 @@ Some of the early use cases involved doing real-time computations and a lambda f
 **Learning as we go**
 As we are building out different types of products and validating it with customers, it turns out that our real-time lambda environment only covered some of the use cases. Most of the use cases needed historical data of each user, and our technology at the time could not handle this in real-time. We decided to focus on the trait builder and catalog.
 
-## Our first user conference as a deadline
+## Our First User Conference as a Deadline
 
 As we are building out Personas, the company wanted to organize the first ever user conference about 2 months ahead. We wanted to announce Personas and at this exclusive user conference. This meant we had to move even faster than before, and were now taxed by coming up with a compelling demo for our CEO and Head of Product to demo on stage.
 
-## Doubling down on prototyping a product demo
+## Doubling down on Prototyping a Product Demo
 
 It seemed like a impossible deadline to build out a product before Synapse. There was no way we could build our complete product and demo it on-stage, we were still pivoting often and learning more. At this point most of the design work was still in Sketch, and all we had build was our failed real-time functions environment.
 

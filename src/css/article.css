@@ -3,11 +3,22 @@
 }
 
 .Article {
-  font-size: 18px;
   font-family: var(--typekit-font-sans);
   color: var(--body-text);
   font-weight: 300;
   line-height: 1.7;
+
+  @media (--range-palm) {
+    font-size: 14px;
+  }
+
+  @media (--range-hand) {
+    font-size: 16px;
+  }
+
+  @media (--range-lap), (--range-desk) {
+    font-size: 18px;
+  }
 
   & a {
     color: var(--black);
@@ -25,10 +36,22 @@
   }
 
   & h1 {
-    font-size: 72px;
     margin-top: 1em;
+    line-height: 1.125;
     font-family: var(--typekit-font-serif);
     color: var(--black);
+
+    @media (--range-palm), (--range-hand) {
+      font-size: 32px;
+    }
+
+    @media (--range-lap) {
+      font-size: 48px;
+    }
+
+    @media (--range-desk) {
+      font-size: 72px;
+    }
   }
 
   & h2,
@@ -37,17 +60,25 @@
   & h5,
   & h6 {
     font-size: 32px;
+    line-height: 1.4;
     margin-top: 2em;
     font-weight: 600;
     font-family: var(--typekit-font-sans);
     color: var(--black);
+
+    @media (--range-palm), (--range-hand) {
+      font-size: 18px;
+    }
+
+    @media (--range-lap) {
+      font-size: 24px;
+    }
   }
 
   & p {
     color: var(--body-text);
     margin-top: 1.25em;
     margin-bottom: 1.25em;
-    font-size: 18px;
   }
 
   & ul,
@@ -62,14 +93,16 @@
   }
 
   & blockquote {
-    border-left: 1px solid #dae1e7;
-    padding: 8px 48px;
-    margin-left: -48px;
-    margin-right: -48px;
     font-style: italic;
+    @media (--range-lap), (--range-desk) {
+      border-left: 1px solid #dae1e7;
+      padding: 8px 48px;
+      margin-left: -48px;
+      margin-right: -48px;
 
-    & p {
-      font-size: 120%;
+      & p {
+        font-size: 120%;
+      }
     }
   }
 
@@ -91,30 +124,46 @@
 
 .image-well {
   background-color: var(--well-bg);
-  margin-top: 48px;
-  margin-bottom: 48px;
-  padding: 40px;
+  padding: 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 
   @media (--range-desk-m), (--range-desk-l) {
     margin-left: -200px;
     margin-right: -200px;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   @media (--range-desk-xl) {
     margin-left: -260px;
     margin-right: -260px;
     padding: 60px;
+    margin-top: 48px;
+    margin-bottom: 48px;
   }
 }
 
 .grid-columns-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 48px;
+  @media (--range-lap), (--range-desk) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 48px;
+  }
 }
 
 .Article-inner {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+  @media (--range-palm), (--range-hand) {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  @media (--range-lap), (--range-desk) {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
