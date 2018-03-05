@@ -1,8 +1,5 @@
 body {
   opacity: 0;
-
-  box-shadow: inset 0 0 0 4px var(--grey-lighter),
-    inset 0 0 0 5px var(--grey-light);
 }
 
 @keyframes page-fade-in {
@@ -44,12 +41,31 @@ body {
 }
 
 .WideContainer {
-  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  padding-left: 80px;
-  padding-right: 80px;
+
+  @media (--range-palm) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  @media (--range-hand), (--range-lap-s), (--range-lap-m) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  @media (--range-lap-l) {
+    max-width: 1280px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @media (--range-desk) {
+    max-width: 1280px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .typekit-font-serif {
@@ -89,6 +105,7 @@ a {
 
   @media (--range-palm), (--range-hand) {
     padding: 4px 18px;
+    font-size: 11px;
   }
 }
 
@@ -121,6 +138,10 @@ a {
   letter-spacing: 0.16em;
   font-size: 13px;
   font-weight: 500;
+
+  @media (--range-palm), (--range-hand) {
+    font-size: 11px;
+  }
 }
 
 .text-all-caps-small {
@@ -156,10 +177,10 @@ a {
   }
 }
 
-.Project {
-  margin-top: 80px;
-  margin-bottom: 80px;
-
-  & img {
+.Split {
+  @media (--range-lap-l), (--range-desk) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 48px;
   }
 }

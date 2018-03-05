@@ -1,26 +1,62 @@
 .SmallProject {
   font-family: var(--typekit-font-sans);
   background-color: var(--grey-lightest);
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 48px;
+
+  @media (--range-palm), (--range-hand) {
+    margin-bottom: 24px;
+  }
+
+  @media (--range-lap-s), (--range-lap-m) {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  @media (--range-lap-l), (--range-desk) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
 }
 
 .SmallProject-left {
   flex: 1;
   position: relative;
-  margin-top: 80px;
-  margin-left: 80px;
-  margin-right: 80px;
-  padding-bottom: 16px;
+
+  @media (--range-palm), (--range-hand) {
+    /* width: 240px; */
+    padding: 40px 24px;
+  }
+
+  @media (--range-lap-s), (--range-lap-m) {
+    padding-bottom: 32px;
+  }
+
+  @media (--range-lap), (--range-desk-s) {
+    margin-top: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  @media (--range-desk-m), (--range-desk-l), (--range-desk-xl) {
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 16px;
+  }
 }
 
 .SmallProject-date {
   color: var(--grey-dark);
-  position: absolute;
-  top: 0;
-  right: 0;
   font-size: 11px;
+
+  @media (--range-palm), (--range-hand) {
+  }
+
+  @media (--range-lap-l), (--range-desk) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .SmallProject-title {
@@ -29,6 +65,15 @@
   font-family: var(--typekit-font-serif);
   font-size: 32px;
   font-weight: 500;
+
+  @media (--range-palm), (--range-hand), (--range-lap-s), (--range-lap-m) {
+    font-size: 24px;
+    margin-top: 0.5em;
+  }
+
+  @media (--range-lap) {
+    font-size: 24px;
+  }
 }
 
 .SmallProject-content {
@@ -46,12 +91,21 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: flex-end;
 
   & img {
     flex-shrink: 0;
     flex-basis: 1;
     /* height: 100%; */
     max-height: 100%;
+  }
+
+  @media (--range-palm), (--range-hand) {
+    display: none;
+  }
+
+  @media (--range-lap-s), (--range-lap-m) {
+    flex-basis: 240px;
   }
 }
 

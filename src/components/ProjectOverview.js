@@ -24,16 +24,7 @@ import absorbedApp from '../images/projects/absorbed/absorbed@2x.jpg'
 // }
 
 const Split = props => {
-  return (
-    <div
-      className={css`
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 48px;
-      `}
-      {...props}
-    />
-  )
+  return <div className={'Split'} {...props} />
 }
 
 export default class ProjectOverview extends React.PureComponent {

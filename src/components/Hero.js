@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 import { css } from 'emotion'
 import Twitter from './Twitter'
 import LinkedIn from './LinkedIn'
@@ -29,13 +30,29 @@ export default class Hero extends React.PureComponent {
             development.
           </p>
           <p className="my-4">
-            I currently work at <A>Segment</A> and spearhead the design,
-            development and adoption of our open-source design system called{' '}
-            <A>Evergreen</A>.
+            I currently work at{' '}
+            <A
+              target="_blank"
+              href="https://segment.com/"
+              rel="noopener noreferrer"
+            >
+              Segment
+            </A>{' '}
+            and spearhead the design, development and adoption of our
+            open-source design system called{' '}
+            <A
+              target="_blank"
+              href="https://github.com/segmentio/evergreen"
+              rel="noopener noreferrer"
+            >
+              Evergreen
+            </A>.
           </p>
           <p className="my-4">
             I also lead the product design of our latest product —{' '}
-            <A>Personas</A>.
+            <Link to="Personas" className="Link font-normal fancy-underline">
+              Personas
+            </Link>.
           </p>
           <p style={{ marginTop: 48 }} className="Hero-links">
             <a href="mailto:jssrdesign@gmail.com" className={`Button`}>
