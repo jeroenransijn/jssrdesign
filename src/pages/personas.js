@@ -13,6 +13,11 @@ const PersonasPage = () => (
     </Link>
     <Article>
       <Markdown escapeHtml={false} source={content} />
+      <br />
+      <br />
+      <Link to="/" className="Link">
+        <BackArrow /> <span>Home</span>
+      </Link>
     </Article>
     <Footer />
   </div>

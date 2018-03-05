@@ -85,6 +85,7 @@ a {
 }
 
 .Button {
+  border: none !important;
   box-shadow: inset 0 0 0 1px color(var(--black) alpha(0.1));
   text-transform: uppercase;
   letter-spacing: 0.16em;

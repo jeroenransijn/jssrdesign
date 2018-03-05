@@ -1,10 +1,31 @@
+<p class="text-all-caps text-grey-lighter">2017 – ongoing</p>
+
 # Personas Case Study
+
+Involvement: **Product Design Lead**
+
+<hr />
 
 Segment’s core data router product tracks over 2.9 billion end users every single month. That data powers analytics, marketing automation and machine learning tools for our customers. Segment Personas is the next generation of tools and products build on top of this massive data pipeline. The goal of Personas is to make every interaction with your users cohesive, personal and relevant.
 
+## Some Screenshots from the Final Product
+
+<div class="image-well">
+<div class="grid-columns-3">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225966663_Audience+builder.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225966517_Audience+Destinations.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225966598_Audience+Detail+Page.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225966609_Computed+Trait+Flow.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225966623_Facebook+Custom+Audiences+.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225966734_Profile+View.png" />
+</div>
+</div>
+
+## Starting on the Personas Team
+
 When I joined the Personas team (formerly called User Record team) early 2017. We were a small, nimble team within the organization — often referred to as a startup within Segment. I worked closely with the PM behind Personas as well as the engineers on the team. It was the perfect fit for me, we moved fast and I got to wear multiple hats. I spend a lot of my time designing in code and building out complex data-driven UI systems.
 
-## Understanding the Problem Set
+### Understanding the Problem Set
 
 Customer feedback has been the driving force behind the Personas product. The biggest problem is that it’s hard to build out a single personalized customer journey across the entire user experience. The key problems that stood out where:
 
@@ -20,7 +41,7 @@ The first thing we had to design for Personas was a way to display the stateful 
 <div class="grid-columns-3">
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520113401619_Screenshot+2018-03-03+13.41.31.png" />
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520113401505_Screenshot+2018-03-03+13.41.59.png" />
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520113401619_Screenshot+2018-03-03+13.41.31.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520113401596_Screenshot+2018-03-03+13.41.55.png" />
 </div>
 </div>
 
@@ -38,15 +59,43 @@ At this point profiles were useful and we got signal for synthesizing new inform
 * **Trait builder,** a slightly more complex interface to compute traits.
 * **Audience builder,** a very complex UI builder to map SQL queries.
 
-**Our first choice**
+### Our First Choice
+
 Some of the early use cases involved doing real-time computations and a lambda function environment seemed like a good fit to start. We also wanted to build out a trait catalog and some ways to configure those traits.
 
-**Learning as we go**
+<div class="image-well">
+<div class="grid-columns-3">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225463308_Compute+-+Functions.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225463358_Compute+-+New+Trait.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225463232_Records+-+Users.png" />
+</div>
+</div>
+
+### Learning as We Go
+
 As we are building out different types of products and validating it with customers, it turns out that our real-time lambda environment only covered some of the use cases. Most of the use cases needed historical data of each user, and our technology at the time could not handle this in real-time. We decided to focus on the trait builder and catalog.
+
+<div class="image-well">
+<div class="grid-columns-3">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520223097626_Screenshot+2018-03-04+20.11.23.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520223097612_Screenshot+2018-03-03+14.06.13.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520223097663_Screenshot+2018-03-03+14.06.03.png" />
+</div>
+</div>
 
 ## Our First User Conference as a Deadline
 
 As we are building out Personas, the company wanted to organize the first ever user conference about 2 months ahead. We wanted to announce Personas and at this exclusive user conference. This meant we had to move even faster than before, and were now taxed by coming up with a compelling demo for our CEO and Head of Product to demo on stage.
+
+As an aside, I designed and build out the event website for Synapse, which was later on used as the brand for the complete event.
+
+<div class="image-well">
+<div class="grid-columns-3">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225212520_Synapse+hero.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225212108_Synapse+team.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225212297_Synapse+timeline.png" />
+</div>
+</div>
 
 ## Doubling down on Prototyping a Product Demo
 
@@ -60,6 +109,14 @@ I identified a opportunity for me to step up and hopefully convince our team to 
 
 It was clear to our team that the best way forward would be to focus on the prototype and the product demo. Now it was time for me to start building out our prototype the product demo.
 
+<div class="image-well">
+<div class="grid-columns-3">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520223097626_Screenshot+2018-03-04+20.11.23.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520223097612_Screenshot+2018-03-03+14.06.13.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520223097663_Screenshot+2018-03-03+14.06.03.png" />
+</div>
+</div>
+
 ## Opportunity for a Design System
 
 Our goal was to build a interactive prototype for a on-stage demo for our Head of Product. We learned a ton from building out the UI Framework for the user profiles, but now we pivoted towards building out the experience inside of our application. This product would require a lot of new components and interaction patterns.
@@ -69,6 +126,14 @@ At this point I had build out the existing UI Framework in our existing app abou
 ## Building out Evergreen
 
 I started doing a redesigned set of our components and adding ones that were missing for Personas. Since I had to build out a interactive prototype, I started building out our open-source UI Framework called Evergreen. I am currently leading the effort to roll out this system across the rest of our product and organization.
+
+<div class="image-well">
+<div class="grid-columns-3">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225225563_Evergreen+Core+Sketch.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225225488_Evergreen+Documentation.png" />
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520225225535_Evergreen+Storybook.png" />
+</div>
+</div>
 
 ## Synapse is a Huge Success
 

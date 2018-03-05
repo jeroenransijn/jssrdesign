@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { withPrefix } from 'gatsby-link'
 import '../typekit'
 
 import '../css/index.css'
@@ -23,16 +24,40 @@ const TemplateWrapper = ({ children }) => (
       ]}
     >
       <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href={withPrefix('/apple-touch-icon.png')}
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        href={withPrefix('/favicon-32x32.png')}
+        sizes="32x32"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        href={withPrefix('/favicon-16x16.png')}
+        sizes="16x16"
+      />
+      <link
+        rel="mask-icon"
+        href={withPrefix('/safari-pinned-tab.svg')}
+        color="#5bbad5"
+      />
+      <link rel="manifest" href={withPrefix('/manifest.json')} />
+      <meta name="theme-color" content="#ffffff" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <link
         href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/preflight.min.css"
         rel="stylesheet"
       />
       <link
         href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/utilities.min.css"
         rel="stylesheet"
-        onLoad={() => {
-          console.log('tailwind loaded')
-          document.body.classList.add('tailwind-loaded')
-        }}
       />
     </Helmet>
     <div className="clearfix">{children()}</div>
