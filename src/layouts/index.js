@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import '../typekit'
 
 import '../css/index.css'
 
@@ -20,16 +21,20 @@ const TemplateWrapper = ({ children }) => (
             'product design, design, ux design, ui design, product developer, full stack designer'
         }
       ]}
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/preflight.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/utilities.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://use.typekit.net/tlw7lpg.css" />
+    >
+      <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/preflight.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/utilities.min.css"
+        rel="stylesheet"
+        onLoad={() => {
+          console.log('tailwind loaded')
+          document.body.classList.add('tailwind-loaded')
+        }}
+      />
+    </Helmet>
     <div className="clearfix">{children()}</div>
   </div>
 )

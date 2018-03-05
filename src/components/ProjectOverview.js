@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { navigateTo } from 'gatsby-link'
 import { css } from 'emotion'
 import personas from '../images/projects/personas/placeholder.png'
 import blog from '../images/projects/segment-blog.png'
@@ -48,7 +49,7 @@ export default class ProjectOverview extends React.PureComponent {
           `}
         >
           <BigProject>
-            <img src={personas} />
+            <img src={personas} onClick={() => navigateTo('./personas')} />
           </BigProject>
           <Split>
             <div>

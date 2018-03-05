@@ -1,0 +1,6 @@
+:root {
+  --typekit-font-serif: 'garamond-premier-pro-display', 'Garamond', 'serif';
+  --typekit-font-sans: 'adelle-sans', sans-serif;
+  --black: rgba(34, 41, 47, 1);
+  --body-text: rgb(61, 72, 82);
+}
