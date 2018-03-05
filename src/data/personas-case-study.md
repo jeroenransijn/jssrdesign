@@ -6,7 +6,7 @@ Involvement: **Product Design Lead**
 
 <hr />
 
-Segment’s core data router product tracks over 2.9 billion end users every single month. That data powers analytics, marketing automation and machine learning tools for our customers. Segment Personas is the next generation of tools and products build on top of this massive data pipeline. The goal of Personas is to make every interaction with your users cohesive, personal and relevant.
+Segment’s core data router product tracks over 2.9 billion end users every single month. That data powers analytics, marketing automation and machine learning tools for our customers. [Segment Personas](https://segment.com/personas) is the next generation of tools and products build on top of this massive data pipeline. The goal of Personas is to make every interaction with your users cohesive, personal and relevant.
 
 ## Some Screenshots from the Final Product
 
@@ -111,9 +111,9 @@ It was clear to our team that the best way forward would be to focus on the prot
 
 <div class="image-well">
 <div class="grid-columns-3">
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520223097626_Screenshot+2018-03-04+20.11.23.png" />
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520223097612_Screenshot+2018-03-03+14.06.13.png" />
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_A3A89DED5D964A4369D44865F3BA34BA895B8A60A50E9264DA77B8A8E003C8BD_1520223097663_Screenshot+2018-03-03+14.06.03.png" />
+<img src="https://prototype-qpehbzjczf.now.sh/hub.png" />
+<img src="https://prototype-qpehbzjczf.now.sh/personas%20overview.png" />
+<img src="https://prototype-qpehbzjczf.now.sh/comptued-traits.png" />
 </div>
 </div>
 
@@ -125,7 +125,7 @@ At this point I had build out the existing UI Framework in our existing app abou
 
 ## Building out Evergreen
 
-I started doing a redesigned set of our components and adding ones that were missing for Personas. Since I had to build out a interactive prototype, I started building out our open-source UI Framework called Evergreen. I am currently leading the effort to roll out this system across the rest of our product and organization.
+I started doing a redesigned set of our components and adding ones that were missing for Personas. Since I had to build out a interactive prototype, I started building out our open-source UI Framework called [Evergreen](https://github.com/segmentio/evergreen). I am currently leading the effort to roll out this system across the rest of our product and organization.
 
 <div class="image-well">
 <div class="grid-columns-3">
