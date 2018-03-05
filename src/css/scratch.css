@@ -1,5 +1,8 @@
 body {
   opacity: 0;
+
+  box-shadow: inset 0 0 0 4px var(--grey-lighter),
+    inset 0 0 0 5px var(--grey-light);
 }
 
 @keyframes page-fade-in {
@@ -131,6 +134,13 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 13px;
+  font-weight: 500;
+}
+
+.text-all-caps-small {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 11px;
   font-weight: 500;
 }
 
